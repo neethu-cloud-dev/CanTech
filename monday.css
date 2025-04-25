@@ -1,0 +1,199 @@
+/* Global Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('canteen-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container for the Page */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: 135px;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Meal Section Styles (Clickable headers) */
+button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    background-color: #a0b94f;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for meal buttons */
+button:hover {
+    background-color: #8b9d3a;
+}
+
+/* Bottom Action Buttons (Calculate) */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Done Button Style (Fixed Position at the bottom corner) */
+.done-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #a0b94f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for done button */
+.done-button:hover {
+    background-color: #8b9d3a;
+}
+
+/* Back Button Style */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #a0b94f;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for back button */
+.back-button:hover {
+    background-color: #8b9d3a;
+}
+
+/* Menu Items Text Styling */
+.food-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Quantity Display */
+.controls span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Controls for Quantity Adjustments */
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center-aligned */
+    gap: 10px; /* Reduced gap */
+}
+
+/* Small Size for + and - Buttons */
+.controls button {
+    padding: 5px 10px;
+    font-size: 14px; /* Smaller text size */
+    border-radius: 5px; /* Smaller button radius */
+    border: 1px solid #a0b94f;
+    background-color: #a0b94f;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the controls' buttons */
+.controls button:hover {
+    background-color: #8b9d3a;
+}
+
+/* Center-align the menu items */
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align food name, quantity and buttons */
+    justify-content: center;
+    margin: 15px 0;
+    width: 100%; /* Full width */
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .buttons button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
+.total-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    background-color: rgba(160, 185, 79, 0.95); /* Green theme */
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 18px;
+    width: 300px;
+    display: none; /* Will be changed via JS */
+    z-index: 9999; /* Make sure it stays on top */
+}
+
+
+.total-box p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* OK Button inside Total Box */
+#okButton {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #a0b94f;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#okButton:hover {
+    background-color: #8b9d3a;
+    color: white;
+}

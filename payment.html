@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="payment.css" />
+</head>
+<body>
+  <div class="payment-container">
+    <h1>Your Order Summary</h1>
+    <div id="orderList"></div>
+
+    <h2 id="totalAmountDisplay">Total: ₹0</h2>
+
+    <button onclick="confirmOrder()">Confirm Order</button>
+  </div>
+
+  <!-- Confirmation Popup -->
+  <div id="confirmationPopup" class="popup">
+    <div class="popup-content">
+      <h3>Order Confirmed!</h3>
+      <p>Thank you for your order.</p>
+      <button onclick="goToPayment()">Proceed to Payment</button>
+    </div>
+    <div class="button-container">
+        <button class="back-button" onclick="goBackToMenu()">⬅ Back to Menu</button>
+    </div>
+    
+    <script src="payment.js"></script>
+    
+  </div>
+
+  <script src="payment.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meals Options - Friday</title>
+    <link rel="stylesheet" href="monday.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MEALS OPTIONS</h1>
+
+        <button id="breakfast_toggle" onclick="toggleMenu('breakfast')">Breakfast</button>
+        <div id="breakfast" style="display:none;"></div>
+
+        <button id="lunch_toggle" onclick="toggleMenu('lunch')">Lunch</button>
+        <div id="lunch" style="display:none;"></div>
+
+        <button id="snacks_toggle" onclick="toggleMenu('snacks')">Snacks</button>
+        <div id="snacks" style="display:none;"></div>
+
+        <button id="dinner_toggle" onclick="toggleMenu('dinner')">Dinner</button>
+        <div id="dinner" style="display:none;"></div>
+
+        <button onclick="calculateTotal()">Calculate Total</button>
+
+        <button class="done-button" onclick="done()">Done</button>
+
+        <button class="back-button" onclick="goBack()">Back</button>
+     
+        </div>
+        
+
+
+    </div>
+
+    <script src="fri.js"></script>
+</body>
+</html>

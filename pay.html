@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="payment.css" />
+</head>
+<body>
+  <div class="payment-container">
+    <h1>Proceed to Payment</h1>
+    <p>Your order total: ₹<span id="totalAmount">0</span></p>
+
+    <div class="payment-buttons">
+      <button id="gpayButton">Pay with Google Pay</button>
+      <button id="phonepeButton">Pay with PhonePe</button>
+    </div>
+
+    <p id="status"></p>
+  </div>
+
+  <script src="payment.js"></script>
+</body>
+</html>

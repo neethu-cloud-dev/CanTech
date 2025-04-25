@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login | Emerald Canteen</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>Admin Login</h1>
+    <input type="text" id="adminName" placeholder="Enter Name" />
+    <input type="password" id="adminPassword" placeholder="Enter Password" />
+    <button onclick="login()">Login</button>
+    <p id="errorMsg"></p>
+  </div>
+
+  <div class="dashboard" id="adminDashboard" style="display: none;">
+    <h2>Admin Dashboard</h2>
+
+    <div class="section">
+      <h3>Menu Editing</h3>
+      <div class="menu-editor">
+        <h4>Monday</h4>
+        <input type="text" id="mondayMenu" placeholder="Enter Monday's Menu" />
+        <button onclick="saveMenu('monday')">Save</button>
+
+        <h4>Tuesday</h4>
+        <input type="text" id="tuesdayMenu" placeholder="Enter Tuesday's Menu" />
+        <button onclick="saveMenu('tuesday')">Save</button>
+
+        <h4>Wednesday</h4>
+        <input type="text" id="wednesdayMenu" placeholder="Enter Wednesday's Menu" />
+        <button onclick="saveMenu('wednesday')">Save</button>
+
+        <h4>Thursday</h4>
+        <input type="text" id="thursdayMenu" placeholder="Enter Thursday's Menu" />
+        <button onclick="saveMenu('thursday')">Save</button>
+
+        <h4>Friday</h4>
+        <input type="text" id="fridayMenu" placeholder="Enter Friday's Menu" />
+        <button onclick="saveMenu('friday')">Save</button>
+
+        <h4>Saturday</h4>
+        <input type="text" id="saturdayMenu" placeholder="Enter Saturday's Menu" />
+        <button onclick="saveMenu('saturday')">Save</button>
+
+        <h4>Sunday</h4>
+        <input type="text" id="sundayMenu" placeholder="Enter Sunday's Menu" />
+        <button onclick="saveMenu('sunday')">Save</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Feedback Form Responses</h3>
+      <a href="https://docs.google.com/forms/d/15uCzUTRd-ZI3J8TzjahBGChYG-z05-SUJeuWPKgiaxc/edit#responses" target="_blank">View Google Form Analytics</a>
+    </div>
+    
+    <!-- Buttons for Done and Back -->
+    <div class="action-buttons">
+      <button class="done-btn" onclick="finaliseOrder()">Done</button>
+      <button class="back-btn" onclick="history.back()">Back</button>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

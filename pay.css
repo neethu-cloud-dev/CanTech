@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .payment-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .payment-buttons {
+    margin-top: 1rem;
+  }
+  
+  button {
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  #gpayButton {
+    background: #4285F4;
+    color: white;
+  }
+  
+  #phonepeButton {
+    background: #6A1B9A;
+    color: white;
+  }
+  
+  #status {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
